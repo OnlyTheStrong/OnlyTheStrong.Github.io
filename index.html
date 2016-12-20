@@ -1,59 +1,876 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>产品的思考 by OnlyTheStrong</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">产品的思考</h1>
-      <h2 class="project-tagline">上传：赵强</h2>  <a href="http://www.zhaoqiang.online/resume.message/">作者简介</a>
-    </section>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 
-    <section class="main-content">
-      <p>用户体验在使用层面是一个感情的解释，但是在产品设计的专业领域，这是一个具象且拥有层次感的专业领域。当一个产品进入市场后，“产品如何与外界发生联系并发挥作用”，也就是人们如何“接触”和“使用”它。这就是用户体验的回馈。不妨把用户体验具象到如下几个层次：</p>
+<head>
 
-<p>1.表现层——用户的感官体验，呈现给用户视听上的体验，强调舒适性，一般在色彩、声音、图像等呈现。</p>
+   <!--- 页面描述 -->
+    <meta charset="utf-8">
+	<title>OnlyTheStrong</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-<p>2.框架层——交互体验，呈现给用户操作上的体验，强调易用性，一般在点击、输入、输出等呈现。</p>
+   <!-- 页面缩放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<p>3.结构层——交互设计关注于描述“可能的用户行为“，同时定义”系统如何配合与响应“这些用户行为，并强调用户在浏览上的体验。</p>
-
-<p>4.范围层——定义项目范围同时在做两件事情：</p>
-
-<pre><code>● 这是一个有价值的过程；
-
-● 同时能产生有价值的产品。
-</code></pre>
-
-<p>对功能型产品而言，范围层要确定的是功能规格；对信息型产品而言，范围层要确定的是内容需求。大部分时候，当人们说到某种需求的时候，他们想的是产品必须拥有的、某种特性的一句简短描述。
-确定需求优先级。有时一个战略目标将产生多个需求。另一方面，一个需求也可以实现多个战略目标。</p>
-
-<p>5.战略层：</p>
-
-<pre><code>● 我们要通过这个产品得到什么？（产品目标）
-
-● 我们的用户要通过这个产品得到什么？（用户需求）
-
-● 用户细分将全部的用户划分成较小的、有共同需求的小组，依次来帮助我们更好地了解用户的需求。
-
-● 在用户体验设计的过程中，人物角色是从用户研究中提取出的、可成为样例的虚拟人物（俗称用户画像）
-</code></pre>
-
-<p>当我们把类似于“情怀”的用户体验具象到产品设计中的每一个层次时，用户体验将不在成为任何一个借口的挡箭牌。</p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits" align="center"> Welcome to my website</span>
-      </footer>
-
-    </section>
-
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">			<!-- 用来设置整体布局-->
+   <link rel="stylesheet" href="css/vendor.min.css">    <!-- 用来设置首页三张滚动图片-->
+   <link rel="stylesheet" href="css/main.css">     		<!-- 用来设置布局和图片-->
+   <link rel="stylesheet" href="css/player.css"/>     	<!-- 用来设置布局和图片-->
   
-  </body>
+   
+   
+   <!-- script   player.js设置播放器
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script src="js/music.js"></script>
+	<script src="js/播放/jquery172.js"></script>
+	
+   <!--  貌似没什么用
+	<link rel="shortcut icon" href="favicon.png" >
+	-->
+ 
+
+
+<body>
+
+       
+           
+</head>
+
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+		<!--黄色logo不要了！
+	     去掉了 href="index.html" 链接O(∩_∩)O
+		-->
+		<div class="logo">
+	         <a >Home</a>  
+	      </div>
+		  
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#home">Home</a></li>
+		         <li class="current"><a class="smoothscroll" href="#article">Article</a></li>
+	            <li><a class="smoothscroll" href="#note">Note</a></li>
+	            <li><a class="smoothscroll" href="#about">About</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contact</a></li>				
+	         </ul> <!-- end #nav -->			 
+				
+		</nav> <!-- end #nav-wrap -->
+		
+		
+	<!--复制过来 -->
+	
+	<div id="player">
+	
+	<!-- 播放器UI-->
+	<div class="m_player" id="divplayer" role="application" onselectstart="return false" style="left: 0px;">
+    <div class="m_player_dock" id="divsongframe">
+        <div class="music_info" id="divsonginfo"><a target="contentFrame" class="album_pic" title="">
+		<img style="position:absolute;left:10px;top:4px;" src="images/player/cover_mine_130.png" alt="" onerror="this.src='images/player/cover_mine_130.png'"></a>
+		
+		<div class="music_info_main"><p class="cover" ><span>music is life</span></p>
+		<p class="tag" >music</p><p class="play_date" id="ptime"></p>
+		<div class="timer left">0:00</div>
+		<p class="music_op" style="display:none;"> <strong class="btn_kge" onMouseOver="this.className='btn_kge btn_kge_hover';" onMouseOut="this.className='btn_kge';" style="z-index:100;display:none;" id="btnkge"></strong></p></div></div>
+        
+		<div class="bar_op" >		
+            <strong title="上一首( [ )" class="rewind icon" ;"><span>上一首</span></strong>
+			<strong title="播放(P)" class="playback icon" id="btnplay" "><span>play</span></strong>
+            <strong title="下一首( ] )" class="fastforward icon" onClick="g_topPlayer.next();"><span>下一首</span></strong>
+            <strong title="单曲循环" class="repeat icon" id="btnPlayway" onClick="g_topPlayer.setPlayWay();"><span>列表循环</span></strong>
+	
+					
+
+				<p class="volume" title="音量调节">
+                <span class="mute icon left" id="spanmute" title="点击设为静音(M)"></span>
+				<span class="slider left" id="spanvolume">
+                    <span id="spanvolumenum">0</span>
+					<span class="volume_bar" style="width:0%;" id="spanvolumebar"></span>
+				<!--	<span class="volume_op" style="left:60%;" id="spanvolumeop"></span> 这个不要了，一个音量上的点-->
+					<div class="pace"></div>
+				</span>
+				
+            </p>
+        </div>
+       <div class="progress">
+				<div class="slider" id="spanplayer_bgbar">
+				 <span class="download_bar" id="downloadbar" style="width: 0%;"></span>
+				<span class="play_current_bar" style="width: 0%;" id="spanplaybar"></span>
+				<span class="progress_op" style="left: 0%;" id="spanprogress_op"></span>
+					<div class="loaded"></div>
+					<div class="pace"></div>
+		</div>
+        <div class="time_show" style="left:240px;bottom:8px;display:none;">
+            <p id="time_show"></p>
+            <span class="icon_arrow_foot"><i class="foot_border"></i><i class="foot_arrow"></i></span>
+        </div>
+    </div>
+        <button type="button" class="folded_bt" id="btnfold" ><span> </span></button>  <!-- 收起/打开播放器按钮-->
+	
+    <!--play list-->
+    <div class="play_list_frame" id="divplayframe" style="display: none ;filter:alpha(opacity=0);opacity:0;">
+       
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+	
+	
+	<!--注释掉facebook，推特等的分享暂时不用
+	      <ul class="header-social">
+	        	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	      </ul>      
+	-->
+	
+	   </div>
+
+   </header> <!-- end header -->
+	
+   <!-- homepage home
+   ================================================== -->
+   <section id="home">	
+   	  
+		<div class="row hero-content"> <!-- 控制三张图片-->
+
+			<div class="twelve columns hero-container">
+
+			   <!-- home-slider start-->
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption" >
+								<h1 class="" >Say hello to <span>World</span>
+								</h1>	
+									
+								<h3 class="">Make sure you could see it</h3>				   
+							</div>						
+					   </li>
+
+					   <!-- slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 class="">The big <a class="smoothscroll"  title="portfolio" >world</a> , The small <a class="smoothscroll"  title="portfolio" >us</a></h1>
+
+								<h3 class="">Everyone can change world</h3>			   
+							</div>					
+					   </li>
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Be kind to our <a class="smoothscroll"  title="portfolio" >works</a> or 
+								<a class="smoothscroll"  title="contact us">others </a></h1>
+
+								<h3 class="">You will success</h3>			   
+							</div>
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- end home-slider -->				   
+
+	      </div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#about">About OnlyTheStrong<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage home -->   
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="article">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>My Article<span></span></h1>
+
+	         <hr />               
+
+	         <p>This one is on the road ...
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/portfolio/chanpin.jpg" alt="Underwater">  <!-- 设置图片 -->
+                     <div class="overlay"></div>                       
+                     <div class="portfolio-item-meta">
+     					      <h5>产品</h5>    					     			<!-- 设置图片文字 -->
+                        <p>节选</p>     		 								<!-- 设置图片文字 -->
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+                     <img src="images/portfolio/java.png" alt="Hotel Sign">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>学习</h5>
+                           <p>java</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/portfolio/git.png" alt="Beetle">                        
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>学习</h5>
+                           <p>Git，Svn</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/portfolio/python.png" alt="Banjo Player">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>学习</h5>
+                           <p>Python，Html</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                   <img src="images/portfolio/life.png" alt="Lighthouse">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>生活</h5>
+                           <p>杂。。。</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/portfolio/free.png" alt="Girl Stuff">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>随笔</h5>
+                           <p>。。。</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-07">                        
+                     <img src="images/portfolio/coffee.jpg" alt="Coffee Cup">                       
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Coffee Cup</h5>
+                           <p>Branding</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-08">
+                     <img src="images/portfolio/judah.jpg" alt="Judah">
+                     <div class="overlay">
+                      	<div class="portfolio-item-meta">
+        					      <h5>Judah</h5>
+                           <p>Webdesign</p>
+        					   </div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>                     
+                  </a>
+               </div>
+       		</div>  <!-- item end -->
+
+         </div> <!-- end portfolio-wrapper -->
+         
+
+         <!-- modal popup
+	   	========================================================= -->
+		<!-- 
+			菜单的详细设置
+		-->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-chanpin.jpg" alt="Underwater" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>产品</h4>
+			      <p>用户体验在使用层面是一个感情的解释，但是在产品设计的专业领域，这是一个具象且拥有层次感的专业领域。当一个产品进入市场后，“产品如何与外界发生联系并发挥作用”，也就是人们如何“接触”和“使用”它。这就是用户体验的回馈。不妨把用户体验具象到如下几个层次：		
+			    <span class="categories">上次更新：2016年12月15日16:58:34</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="product.html">Details</a>  <!-- 设置连接-->
+            	<a href="#" class="popup-modal-dismiss">Close</a>         
+            </div>
+
+	      </div><!-- modal-01 end -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-java.png" alt="Hotel Sign" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>学习</h4>
+			      <p>java</p>
+               <span class="categories">上次更新时间：2016年12月15日17:31:03</span>
+		      </div>
+
+            <div class="link-box">            	
+               <a href="java_study.html">Details</a>  <!-- 设置连接-->
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 end -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-git.png" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <a href="www.baidu.com">Details</a>  <!-- 设置连接-->
+					<h4>学习</h4>
+					<p>Git，Svn</p>
+               <span class="categories">上次更新时间：</span>
+		      </div>
+
+            <div class="link-box">
+				  <a href="gitsvn_study.html">Details</a>  <!-- 设置连接-->
+		          <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 end -->
+
+			<div id="modal-04" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-python.png" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>学习</h4>
+			      <p>Python，Html</p>
+               <span class="categories">上次更新时间：</span>
+		      </div>
+
+            <div class="link-box">
+                 <a href="pythonhtml_study.html">Details</a>  <!-- 设置连接-->
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 end -->
+
+	      <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+	      	<div class="media">
+	      		<img src="images/portfolio/modals/m-life.png" alt="" />
+	      	</div>      	
+
+		      <div class="description-box">
+			      <h4>生活</h4>		      
+
+			      <p> 杂。。。</p>
+
+			      <div class="categories">上次更新时间</div>
+               
+		      </div>
+
+            <div class="link-box">
+					<a href="life.html">Details</a>  <!-- 设置连接-->
+					<a href="#" class="popup-modal-dismiss">Close</a>
+            </div>		      
+
+	      </div><!-- modal-05 end -->
+
+	      <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-free.png" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>随笔</h4>			      
+
+			      <p> 随便写点什么</p>
+
+			      <div class="categories">上次更新时间</div>
+               
+		      </div>
+
+            <div class="link-box">
+					<a href="free.html">Details</a>  <!-- 设置连接-->
+					<a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 end -->
+
+	      <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-coffee.jpg" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>其他</h4>			      
+
+			      <p>没想好写什么.</p>
+
+			      <div class="categories">Branding</div>
+               
+		      </div>
+
+            <div class="link-box">
+                  <a href="#">Details</a>  <!-- 设置连接-->
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 end -->
+
+	      <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-judah.jpg" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>其他</h4>	
+				  
+			      <p>没想好写什么.</p>
+			      <div class="categories">Webdesign</div>
+               
+		      </div>
+
+            <div class="link-box">
+                 <a href="#">Details</a>  <!-- 设置连接-->
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-08 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end portfolio -->
+
+
+   <!-- Services Section
+   ================================================== --><!-- 笔记-->
+   <section id="note">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>My Note<span></span></h1>
+
+	         <hr />      	         
+
+	         <p>Sorry, nothing here.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+
+	            <h3>还没想好写什么</h3>
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	         	</div>  
+
+				</div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+
+	            <h3>Videography.</h3>                  
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	            </div>	              
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	              
+
+	            <h3>Photography.</h3>
+
+	            <div class="service-content">		                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div> 	               
+
+			   </div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+	                  
+	            <h3>Branding.</h3> 
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	            </div>                
+
+				</div> <!-- end bgrid -->
+
+			   <div class="bgrid">
+
+	            <h3>Web Design.</h3>
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	               
+
+	            <h3>Web Development.</h3>
+
+	            <div class="service-content">
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end services -->
+
+<!-- 谁是我？我是谁？关于我这段暂时不需要，以后迭代的时候再修改吧 -->
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Who Is OnlyTheStrong<span></span></h1>
+
+	         <hr />     	    
+
+	         <p>Updating...
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">       	
+
+      	<div class="process bgrid-half tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+			      <h3>School.</h3>	
+
+			      <p>CSU
+			      </p>
+
+		   	</div>
+
+      		<div class="bgrid">
+
+			     	<h3>Code.</h3>
+
+			     	<p>Java and Git
+			   	</p>	
+
+		      </div> 
+
+		      <div class="bgrid">
+
+			     	<h3>Work.</h3>	
+
+			     	<p>Gionee
+			      </p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+			      <h3>Home.</h3>
+
+			      <p>JiLin
+			      </p>	
+
+		      </div>
+
+      	</div> <!-- end process -->      	
+
+     	</div> <!-- end row -->
+
+   </section> <!-- end about -->  
+   
+
+   <!-- Testimonials Section
+   ================================================== --><!-- 关于作者 暂时有两个-->
+   <section id="testimonials">
+
+      <div class="row content flex-container">
+    
+         <div id="testimonial-slider" class="flexslider">
+
+            <ul class="slides">
+               <li>
+                  <p>This website is version  of OnlyTheStrong. Article is of OnlyTheStrong.Code is of OnlyTheStrong.
+                  </p>
+
+                  <div class="testimonial-author">
+                    	<img src="images/avatars/avatar-1.jpg" alt="Author image">
+                    	<div class="author-info">
+                    		zhao qiang
+                    		<span class="position">BU, Gionee.</span>
+                    	</div>
+                  </div>
+             	</li> <!-- end slide -->
+
+               <li>                       
+                  <p>She is a viewer.But OnlyTheStrong Write her.Because of something others don't know.
+                  </p>
+                  <div class="testimonial-author">
+                    	<img src="images/avatars/avatar-2.bmp" alt="Author image">
+                    	<div class="author-info">
+                    		Jia Yu
+                    		<span>Teacher, YKEZ.</span>
+                    	</div>
+                  </div>                        
+               </li> <!-- end slide -->
+
+            </ul> <!-- end slides -->
+
+         </div> <!-- end flexslider -->         
+        
+      </div> <!-- end row -->
+
+   </section> <!-- end testimonials section -->  
+
+
+   <!-- contact
+   ================================================== --><!-- 联系我 -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Get In Touch With Us<span></span></h1>
+
+	         <hr />	        
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+      	
+      	<div id="contact-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action=""  >
+      			<fieldset>
+
+                  <div class="group">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required />
+                  </div>
+                  <div>
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+	               </div>
+                  <div>
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+	               </div>                       
+                  <div>
+	                 	<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" required ></textarea>
+	               </div>                      
+                  <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+         </div>
+
+         <div class="six columns tab-whole right">
+
+            <p class="lead">Welcome
+
+	         <h3 class="address">Come Visit</h3>
+
+	         <p>
+            Shenzhen<br>
+            Futian<br>
+            32F,Tower A,East Pacific International Center,7888
+            </p>
+
+            <h3>Contact Numbers:</h3>
+			   <p>	Phone: 131********<br>
+					Mobile: ********<br>
+			     	Fax: ********
+			   </p>
+               	
+         </div>     	
+
+      </div> <!-- end row -->     
+
+   </section>  <!-- end contact -->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+      		<!--
+			<ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>               
+               <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+               <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-flickr"></i></a></li>               
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+			-->
+            <hr />
+
+            <div class="info">
+
+            	<div class="footer-logo"></div>
+
+	            <p>to be continued...
+	            </p>	        
+
+	         </div>
+
+      	</div>           
+
+         <ul class="copyright">
+         	<li>Finalwrite &copy; 2016.Something is revised.</li> 
+         	<li><a target="_blank" href="http://www.zhaoqiang.online/resume.message/">简历</a></li><!-- 汉字编码&#x7F51;&#x9875;&#x6A21;&#x677F;-->
+         </ul>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#home">Back to Top<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+   <script src="js/播放/jquery-ui-1.8.17.custom.min.js"></script>
+   <script src="js/播放/script.js"></script>
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+   
+</body>
+
 </html>
