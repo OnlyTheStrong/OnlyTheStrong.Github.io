@@ -105,7 +105,44 @@
 
 	         <hr />               
 
-	         <p>This one is on the road ...
+	         <p>==================2016年12月29日19:26:24==================
+			<br/>启动SVN服务：
+			<br/>svnserve -d  -r D:\工作空间\svnroot
+			<br/>
+			<br/>烧录：
+			<br/>MT6737T_Android_scatter
+			<br/>
+			<br/>传统屏幕：显示屏+触摸屏+保护玻璃
+			<br/>in-cell将触摸屏嵌入到显示屏的像素中
+			<br/>on-cell将触摸屏嵌入到显示屏的彩色滤光片和偏光片之间
+			<br/>OGS将触摸屏和保护玻璃融合
+			<br/>
+			<br/>LTPS（Low Temperature Poly-silicon）低温多晶硅技术是为了解决单晶硅的缺点开发而来，LTPS比起a-Si，把外围电路集成到面板基板的可操作更强，载流子移动速度更快，面板的设计更简单，PPI最高可实现500+，一般在300PPI以上的都是采用这种技术，代表产品有HTC One X、iPhone 4/4S/5。
+			<br/>
+			<br/>用ADB：adb logcat -b events可以查看各种包名
+			<br/>
+			<br/>APP启动时间：adb shell am start -W [packageName]/[packageName.MainActivity]
+			<br/>● WaitTime 就是总的耗时，包括前一个应用 Activity pause 的时间和新应用启动的时间；
+			<br/>● ThisTime 表示一连串启动 Activity 的最后一个 Activity 的启动耗时；
+			<br/>● TotalTime 表示新应用启动的耗时，包括新进程的启动和 Activity 的启动，但不包括前
+			<br/>一个应用 Activity pause 的耗时。也就是说，开发者一般只要关心 TotalTime 即可，这个时间才是自己应用真正启动的耗时。
+			<br/>
+			<br/>adb安卓apk：adb install --完整路径
+			<br/>1. 安装Android应用程序
+			<br/>1) 启动Android模拟器
+			<br/>2) adb install (apk在PC上的路径/)*.apk （将apk文件上传到了模拟器自带操作系统的data/app目录下了）
+			<br/>3) Android模拟器界面中浏览打开apk应用程序
+			<br/>
+			<br/>2. 删除Android应用程序
+			<br/>第一种：命令行用uninstall
+			<br/>adb uninstall apk的包名（用EC切换到DDMS的File Explorer中查看，data/data下）
+			<br/>第二种：命令行进入模拟器操作系统
+			<br/>adb shell （进入模拟器自带的操作系统）
+			<br/>cd data/app （切换到apk的安装目录）
+			<br/>rm ***.apk （用EC切换到DDMS的File Explorer中查看，data/app下）
+			<br/>第三种：1.1以上模拟器上删除，非常简单
+			<br/>模拟器的 Setting -> Applications -> Manage applications -> XXX程序 -> Uninstall
+			<br/>这样就可以删除了。
 	         </p>
 
 	      </div>     	    
