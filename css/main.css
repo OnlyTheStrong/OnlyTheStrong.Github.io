@@ -41,7 +41,7 @@ body {
 }
 
 body {
-	background: #0F1215;
+	background: #0F1215;     /*=================设置背景颜色=========================*/
 	font: 16px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
